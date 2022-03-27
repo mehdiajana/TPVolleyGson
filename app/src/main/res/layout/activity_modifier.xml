@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".modifierActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgm"
+        android:src="@mipmap/choose"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Changer la photo"
+        android:id="@+id/btnUpm"
+        android:layout_gravity="center"
+        />
+    <TextView
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom : "
+        android:textStyle="bold"
+        android:textColor="#ED0000"/>
+    <EditText
+        android:id="@+id/nomm"
+        style="@style/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+    <TextView
+        style="@style/text"
+        android:textStyle="bold"
+        android:textColor="#ED0000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prenom :" />
+    <EditText
+        android:id="@+id/prenomm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/input"
+        android:inputType="textPersonName" />
+    <TextView
+        style="@style/text"
+        android:textStyle="bold"
+        android:textColor="#ED0000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ville" />
+    <Spinner
+        android:id="@+id/villem"
+        android:entries="@array/villes"
+        style="@style/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        style="@style/text"
+        android:textStyle="bold"
+        android:textColor="#ED0000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexe :"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        style="@style/text"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="homme" />
+        <RadioButton
+            android:id="@+id/fm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="femme" />
+    </RadioGroup>
+    <RadioGroup
+        android:layout_width="match_parent"
+        style="@style/text"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addm"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:text="Modifier" />
+
+        <Button
+            android:id="@+id/retour"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Retour" />
+
+
+    </RadioGroup>
+
+
+
+
+    <TextView
+        android:id="@+id/iddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="TextView"
+        android:visibility="gone" />
+
+</LinearLayout>
+</ScrollView>

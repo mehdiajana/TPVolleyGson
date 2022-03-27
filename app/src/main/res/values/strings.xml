@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Liste Etudiants</string>
+    <array name="villes">
+        <item>Marrakech</item>
+        <item>Rabat</item>
+        <item>Agadir</item>
+        <item>Casablanca</item>
+        <item>Tanger</item>
+    </array>
+</resources>
